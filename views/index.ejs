@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheLaughLab</title>
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="joke-container">
+        <h1 class="heading">TheLaughLab</h1>
+        <div class="joke">
+          <% if (locals.joke) { %> <%= joke %> <% } else if (locals.setup &&
+          locals.delivery) { %> <%= setup %> <br />
+          <p class="delivery"><%= delivery %></p>
+          <% } else { %> Something Went Wrong! <% } %>
+        </div>
+      </div>
+      <div class="options">
+        <form action="/get-joke" method="get">
+          <Select name="category" id="category">
+            <option value="any">Any</option>
+            <option value="Programming">Programming</option>
+            <option value="Misc">Misc</option>
+            <option value="Dark">Dark</option>
+            <option value="Pun">Pun</option>
+            <option value="Spooky">Spooky</option>
+            <option value="Christmas">Christmas</option>
+          </Select>
+
+          <button type="submit" class="get-btn">Get Joke</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

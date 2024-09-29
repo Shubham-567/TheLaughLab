@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #edf2fb;
+  color: #e5e5e5;
+}
+
+.main-container {
+  height: 400px;
+  max-width: 300px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  padding: 2rem;
+  border: 2px solid #fca311;
+  border-radius: 14px;
+  background-color: #14213d;
+  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.main-container .joke {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.joke-container {
+  margin-bottom: 2rem;
+}
+
+.delivery {
+  background-color: #fca311;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fca311;
+}
+
+.delivery:hover {
+  background-color: #fca311;
+  color: #14213d;
+  font-weight: 600;
+}
+
+.get-btn {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 7px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.5s ease;
+  float: right;
+}
+
+.get-btn:hover {
+  transform: translateY(-5px);
+  background-color: #fca311;
+  color: #14213d;
+  font-weight: 800;
+}
+
+.options {
+  font-size: 1.1rem;
+}
+
+#category {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+}
